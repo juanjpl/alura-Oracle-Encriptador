@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador Challenge</title>
+</head>
+
+<body>
+
+    <div class="contenedor-general centrar">
+        <div class="contenedor-header">
+            <header>
+                <img src="/img/logo.png" alt="">
+            </header>
+        </div>
+
+        <div class="contenedor-encriptador flex-row centrar ">
+            <div class="contenedor-one w-60 flex-column ">
+                <textarea id="ingreso-area" class="text-area centrar" autofocus="true" name="textarea"
+                    placeholder="Ingrese texto aquí"></textarea>
+
+                <div class="botonera-one flex-column w-100 ">
+                    <div class="exclamation flex-row">
+                        <img src="/img/exclamation.png" alt="">
+                        <h6>Solo letras minúsculas y sin acentos</h6>
+                    </div>
+                    <div class="botonera-uno flex-row t-center">
+
+                        <button id="btn-encriptar" class="boton boton-encriptar">Encriptar</button>
+                        <button id="btn-desencriptar" class="boton boton-desencriptar">Desencriptar</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id="contenedor-two" class="contenedor-two w-40 flex-column j-center ">
+
+                
+                <img id="imagen" class="imagen-muñeco" src="/img/muñeco.png" alt="">
+                <h2 id="no-encontrado" class="t-center">Ningún mensaje fue encontrado</h2>
+                <h3 id="ingreso-input" class="t-center">Ingresa el texto que desees encriptar o desencriptar.</h3>
+
+                
+
+                <textarea id="egreso-area" class="text-area-egreso centrar d-invisible" readonly="true" name="textarea"
+                    ></textarea>
+                <div id="botonera-copiar" class="botonera-one flex-row centrar d-invisible">
+
+                    <button id="btn-copiar" class=" boton-copiar">Copiar</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/encriptar.js"></script>
+    <script src="js/desencriptar.js"></script>
+
+
+</body>
+
+</html>
